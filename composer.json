@@ -1,0 +1,25 @@
+{
+    "name": "jacknoordhuis/threaded-class-loader",
+    "description": "A thread safe implementation of a PSR-0, PSR-4 and classmap class loader for use with the pthreads extension.",
+    "authors": [
+        {
+            "name": "Jack Noordhuis",
+            "email": "me@jacknoordhuis.net"
+        }
+    ],
+    "license": "LGPL-3.0",
+    "support": {
+      "source": "https://github.com/JackNoordhuis/ThreadedComposerAutoloader",
+      "issues": "https://github.com/JackNoordhuis/ThreadedComposerAutoloader/issues"
+    },
+    "require": {
+        "php": ">=7.1",
+        "ext-pthreads": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "jacknoordhuis\\Autoload\\": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
