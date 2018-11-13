@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ThreadedClassLoader - threaded-composer-autoloader
+ * ThreadedClassLoader.php - threaded-class-loader
  *
  * Copyright (C) 2018 Jack Noordhuis
  *
