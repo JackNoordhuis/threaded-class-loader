@@ -55,3 +55,7 @@ class MyWorker extends \Worker {
 $worker = new MyWorker($loader);
 $worker->start() && $worker->join();
 ```
+
+<br/>
+__The content of this repo is licensed under the GNU Lesser General Public License v3. A full copy of the license is
+available [here](LICENSE).__
