@@ -26,8 +26,8 @@ Or add the package to your `composer.json`:
 Here is a basic example of replacing the default composer class loader:
 
 ```php
-    $loader = require_once "vendor/autoload.php";
-    $loader = jacknoordhuis\Autoload\ThreadedClassLoader::fromComposerLoader($loader);
+$loader = require_once "vendor/autoload.php";
+$loader = jacknoordhuis\Autoload\ThreadedClassLoader::fromComposerLoader($loader);
 ```
 
 This example will load the composer autoloader so that our threaded loader can be loaded, then we call the helper method which conveniently handles converting composers mappings to \Threaded members. Depending on the extra arguments provided the helper method will also (by default) unregister the composer loader and register the new thread safe loader on the current thread.
