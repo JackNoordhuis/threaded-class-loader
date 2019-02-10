@@ -21,7 +21,6 @@ namespace Tests\Autoload;
 use function class_exists;
 use jacknoordhuis\Autoload\ThreadedClassLoader;
 use Tests\TestCase;
-use function var_dump;
 
 /**
  * Tests the jacknoordhuis\Autoload\ThreadedClassLoader class.
