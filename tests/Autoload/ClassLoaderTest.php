@@ -107,7 +107,7 @@ class ClassLoaderTest extends TestCase {
 
 		$worker->start() && $worker->join();
 
-		$this->assertTrue($hadClass->pop() ?? false, "->loadClass() works when loader passed into threaded context.");
+		$this->assertTrue($hadClass->pop(), "->loadClass() works when loader passed into threaded context.");
 
 	}
 
