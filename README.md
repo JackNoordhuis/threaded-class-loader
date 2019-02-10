@@ -2,6 +2,8 @@ PHP Threaded Class Loader Package
 ===============
 _A thread safe implementation of a PSR-0, PSR-4 and classmap class loader for use with the pthreads extension!_
 
+[![Build Status](https://travis-ci.org/JackNoordhuis/threaded-class-loader.svg?branch=master)](https://travis-ci.org/JackNoordhuis/threaded-class-loader)
+
 The core advantage of having a central thread safe class loader is that new classes can be registered to the loader, on any thread, and when PHP tries to load the class from any thread the loader is also registered on, everything will 'just work' as they shared \Threaded objects.
 
 ## Installation
