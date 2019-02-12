@@ -78,7 +78,7 @@ class ThreadedClassLoader extends \Threaded {
 	 * @return ThreadedClassLoader
 	 */
 	public static function fromComposerLoader(ClassLoader $loader, array $includeFiles = [], bool $register = true, bool $unregister = true) {
-		$threadedLoader = new self();
+		$threadedLoader = new static();
 
 		$threadedLoader->mergeComposerLoader($loader);
 
